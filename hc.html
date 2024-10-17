@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Check Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet"> <!-- Font Import -->
+    <style>
+        body {
+            font-family: 'Jost', sans-serif; /* Applied Jost font */
+            background: url('https://img.freepik.com/free-photo/copy-space-glasses-stethoscope_23-2148519794.jpg?w=996&t=st=1729151974~exp=1729152574~hmac=3592cbb9e4ade6a653e6033e4ea54c28f2b902ba4958c9685b89d46126c201b9') no-repeat center center fixed;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #69afcb;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #69afcb;
+        }
+
+        #result {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+            display: none;
+        }
+
+        #result p {
+            margin: 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Health Check Calculator</h1>
+        <form id="health-check-form">
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+
+            <label for="weight">Weight (in kg)</label>
+            <input type="number" id="weight" placeholder="Enter your weight" required>
+
+            <label for="height">Height (in cm)</label>
+            <input type="number" id="height" placeholder="Enter your height" required>
+
+            <label for="bp">Blood Pressure (e.g., 120/80)</label>
+            <input type="text" id="bp" placeholder="Enter your blood pressure" required>
+
+            <label for="heart-rate">Heart Rate (bpm)</label>
+            <input type="number" id="heart-rate" placeholder="Enter your heart rate" required>
+
+            <label for="symptoms">Symptoms</label>
+            <select id="symptoms">
+                <option value="">Select your symptoms</option>
+                <option value="fever">Fever</option>
+                <option value="cough">Cough</option>
+                <option value="headache">Headache</option>
+                <option value="fatigue">Fatigue</option>
+                <option value="chest-pain">Chest Pain</option>
+                <option value="shortness-of-breath">Shortness of Breath</option>
+                <option value="none">None</option>
+            </select>
+
+            <button type="submit">Check Health</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('health-check-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const age = parseInt(document.getElementById('age').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const bp = document.getElementById('bp').value;
+            const heartRate = parseInt(document.getElementById('heart-rate').value);
+            const symptoms = document.getElementById('symptoms').value;
+
+            const bpValues = bp.split('/');
+            let result = '';
+
+            // Validate blood pressure
+            if (bpValues.length !== 2 || isNaN(bpValues[0]) || isNaN(bpValues[1])) {
+                result = 'Please enter a valid blood pressure in the format "120/80".';
+            } else {
+                const systolic = parseInt(bpValues[0]);
+                const diastolic = parseInt(bpValues[1]);
+
+                // Blood Pressure Conditions
+                if (systolic >= 140 || diastolic >= 90) {
+                    result += 'You may have high blood pressure (Hypertension).<br>';
+                } else if (systolic < 90 || diastolic < 60) {
+                    result += 'You may have low blood pressure (Hypotension).<br>';
+                } else {
+                    result += 'Your blood pressure is normal.<br>';
+                }
+
+                // Heart Rate Conditions
+                if (heartRate > 100) {
+                    result += 'You may have a high heart rate (Tachycardia).<br>';
+                } else if (heartRate < 60) {
+                    result += 'You may have a low heart rate (Bradycardia).<br>';
+                } else {
+                    result += 'Your heart rate is normal.<br>';
+                }
+
+                // Symptoms Check
+                switch (symptoms) {
+                    case 'fever':
+                        result += 'You may have a fever. Rest and stay hydrated.<br>';
+                        break;
+                    case 'cough':
+                        result += 'You may have a respiratory infection or a cold.<br>';
+                        break;
+                    case 'headache':
+                        result += 'You may be experiencing a headache. Ensure hydration and rest.<br>';
+                        break;
+                    case 'fatigue':
+                        result += 'You may be feeling fatigued. Ensure proper rest.<br>';
+                        break;
+                    case 'chest-pain':
+                        result += 'Chest pain could indicate a serious issue. Seek immediate medical attention.<br>';
+                        break;
+                    case 'shortness-of-breath':
+                        result += 'Shortness of breath can be a serious issue. Seek immediate medical attention.<br>';
+                        break;
+                    default:
+                        result += 'Your symptoms appear to be normal.<br>';
+                }
+
+                // BMI Calculation
+                const bmi = (weight / ((height / 100) ** 2)).toFixed(1);
+                result += `Your BMI is ${bmi}. `;
+
+                if (bmi < 18.5) {
+                    result += 'You are underweight.';
+                } else if (bmi >= 18.5 && bmi <= 24.9) {
+                    result += 'You have a normal weight.';
+                } else if (bmi >= 25 && bmi <= 29.9) {
+                    result += 'You are overweight.';
+                } else {
+                    result += 'You are obese.';
+                }
+            }
+
+            // Show result
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `<p>${result}</p>`;
+            resultDiv.style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
