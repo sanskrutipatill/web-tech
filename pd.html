@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Period Predictor</title>
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-image: url('https://img.freepik.com/free-vector/vibrant-pink-watercolor-painting-background_53876-58931.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Dark text color for readability */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for a softer look */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        input {
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid #ff6f61; /* Pink border */
+            margin: 10px 0;
+            padding: 5px;
+            transition: border-color 0.3s;
+        }
+        input:focus {
+            border-color: #ff4f00; /* Darker pink on focus */
+            outline: none; /* Remove default outline */
+        }
+        button {
+            width: 100%;
+            height: 45px;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: #ff6f61; /* Pink button */
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff4f00; /* Darker pink on hover */
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #ff6f61; /* Pink heading color */
+        }
+        h2 {
+            margin-top: 20px;
+            color: #ff4f00; /* Darker pink for result text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Next Period Predictor</h1>
+        <input type="date" id="lastPeriod" placeholder="Last Period Date" required />
+        <input type="number" id="cycleLength" placeholder="Cycle Length (days)" min="1" required />
+        <button id="calculateButton">Predict Next Period</button>
+        <h2 id="nextPeriodResult"></h2>
+    </div>
+
+    <script>
+        const calculateButton = document.getElementById('calculateButton');
+        const nextPeriodResult = document.getElementById('nextPeriodResult');
+
+        calculateButton.addEventListener('click', () => {
+            const lastPeriodInput = document.getElementById('lastPeriod').value;
+            const cycleLength = parseInt(document.getElementById('cycleLength').value);
+
+            if (!lastPeriodInput || isNaN(cycleLength) || cycleLength <= 0) {
+                alert("Please enter a valid date and cycle length.");
+                return;
+            }
+
+            const lastPeriodDate = new Date(lastPeriodInput);
+            const nextPeriodDate = new Date(lastPeriodDate);
+            nextPeriodDate.setDate(lastPeriodDate.getDate() + cycleLength);
+
+            nextPeriodResult.innerText = `Your next period is predicted to start on: ${nextPeriodDate.toDateString()}`;
+        });
+    </script>
+</body>
+</html>
