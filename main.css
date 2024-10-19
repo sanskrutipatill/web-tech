@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
@@ -85,7 +86,7 @@ header {
 
 .btn {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #fb923c;
   color: white;
   border: none;
   border-radius: 5px;
