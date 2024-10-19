@@ -6,7 +6,7 @@
   --overweight: lightcoral;
   --obese: crimson;
 }
-//page-7//
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,7 +15,7 @@
 }
 
 body {
-  background-image: url('https://img.freepik.com/free-vector/flat-background-national-nurses-week-celebration_23-2151263365.jpg?w=996&t=st=1729151088~exp=1729151688~hmac=7db07dc42581f3c37a7495a43f2357116d430b32ba5805df6849d303a5d462e4'); /* Background image */
+  background-image: url('https://img.freepik.com/free-vector/beautiful-decorative-soft-colorful-watercolor-texture-background_1055-13539.jpg'); /* Background image */
   background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Centers the background image */
   display: flex;
