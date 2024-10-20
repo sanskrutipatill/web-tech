@@ -1,98 +1,118 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Articles</title>
-    <link rel="stylesheet" href="article.css">
-</head>
-<body>
-    <header>
-        <div class="hero">
-            <h1>Your Source for Reliable Health Information</h1>
-            <p>Explore our articles to improve your health and wellness.</p>
-        </div>
-    </header>
-
-    <main>
-        <section id="articles">
-            <h2>Latest Articles</h2>
-            <div class="article-list">
-                <article class="article">
-                    <h3>Understanding Nutrition</h3>
-                    <p>Nutrition is a vital part of health. Learn about the essential nutrients your body needs.</p>
-                    <a href="https://scholar.google.co.in/scholar?q=articles+on+Understanding+Nutrition&hl=en&as_sdt=0&as_vis=1&oi=scholart" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Benefits of Regular Exercise</h3>
-                    <p>Exercise is crucial for maintaining good health. Discover different ways to stay active.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Benefits+of+Regular+Exercise&btnG=" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Mental Health Awareness</h3>
-                    <p>Mental health is just as important as physical health. Find out how to take care of your mind.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=mental+health+awareness+campaigns&btnG=&oq=Mental+Health+Awareness" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Yoga for Beginners</h3>
-                    <p>Yoga offers many health benefits. Learn how to get started with this ancient practice.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Yoga+for+Beginners&btnG=" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Importance of Hydration</h3>
-                    <p>Staying hydrated is essential for good health. Discover the benefits of drinking enough water.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Importance+of+Hydration&btnG=" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Healthy Sleep Habits</h3>
-                    <p>Good sleep is vital for overall health. Explore tips for improving your sleep quality.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Healthy+Sleep+Habits&btnG=" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Managing Stress Effectively</h3>
-                    <p>Learn techniques to manage stress and improve your overall mental well-being.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Managing+Stress+Effectively&btnG=" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Benefits of a Balanced Diet</h3>
-                    <p>A balanced diet is essential for health. Discover the components of a healthy eating plan.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Benefits+of+a+Balanced+Diet&btnG=" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Preventing Chronic Diseases</h3>
-                    <p>Find out how lifestyle choices can help prevent chronic diseases.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Preventing+Chronic+Diseases&btnG=" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Heart Health Tips</h3>
-                    <p>Maintain a healthy heart with these essential tips and lifestyle changes.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Heart+Health+Tips&btnG=" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Building Healthy Relationships</h3>
-                    <p>Healthy relationships are crucial for mental health. Learn how to cultivate them.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Building+Healthy+Relationships&btnG=" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Staying Active as You Age</h3>
-                    <p>Discover ways to remain physically active and healthy as you grow older.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Staying+Active+as+You+Age&btnG=" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Women’s Health: Key Considerations</h3>
-                    <p>Explore the unique health challenges and considerations women face throughout their lives.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Women%E2%80%99s+Health%3A+Key+Considerations&btnG=" class="read-more">Read More</a>
-                </article>
-                <article class="article">
-                    <h3>Cancer Awareness: Prevention and Early Detection</h3>
-                    <p>Learn about cancer types, risk factors, and the importance of early detection.</p>
-                    <a href="https://scholar.google.co.in/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Cancer+Awareness%3A+Prevention+and+Early+Detection&btnG=" class="read-more">Read More</a>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    
-</body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: linear-gradient(to right,#12ac8e, #12ac8e);
+    color: white;
+    padding: 20px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #articles {
+    margin: 20px 0;
+  }
+  
+  .article-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .article {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .article h3 {
+    margin-bottom: 10px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #12ac8eec;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .read-more:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
