@@ -46,13 +46,13 @@
           
         </div>
         <div class="header__form">
-          <form>
+          <form method="POST" action="book_appointment.php">
             <h4>Book Now</h4>
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-            <input type="text" placeholder="Address" />
-            <input type="text" placeholder="Phone No." />
-            <button class="btn form__btn">Book Appointment</button>
+            <input type="text" name="first_name" placeholder="First Name" required />
+            <input type="text" name="last_name" placeholder="Last Name" required />
+            <input type="text" name="address" placeholder="Address" />
+            <input type="text" name="phone_number" placeholder="Phone No." required />
+            <button class="btn form__btn" type="submit">Book Appointment</button>
           </form>
         </div>
       </div>
