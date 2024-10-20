@@ -6,3 +6,4 @@ CREATE TABLE appointments (
     phone_number VARCHAR(15) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+ 
