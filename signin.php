@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if user exists
     $sql = "SELECT * FROM users WHERE username='$user'";
     $result = $conn->query($sql);
-
+ 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         // Verify password
