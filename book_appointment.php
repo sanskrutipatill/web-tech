@@ -1,4 +1,4 @@
-<?php
+<?php 
 // Database connection
 $host = 'localhost';
 $db = 'webpr_db';
