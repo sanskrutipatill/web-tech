@@ -74,13 +74,13 @@ Integration with wearable health devices
 
 https://github.com/user-attachments/assets/ae9f1f31-0eb2-4233-8601-a86da691f01b
 
-<img width="1919" height="1079" alt="Screenshot 2025-12-29 183244" src="https://github.com/user-attachments/assets/453dbe74-a01d-4984-9729-c61b69339e47" />
-<img width="1919" height="1079" alt="Screenshot 2025-12-29 183232" src="https://github.com/user-attachments/assets/8f86fc84-2298-4b77-9cd7-5811e714e314" />
-<img width="1919" height="1078" alt="Screenshot 2025-12-29 183153" src="https://github.com/user-attachments/assets/7f54a7f3-6d2c-4af9-a91d-5afdb6a66e18" />
-<img width="1919" height="1079" alt="Screenshot 2025-12-29 183125" src="https://github.com/user-attachments/assets/f2784ecd-9be7-4509-8404-d7d2eedf3ac9" />
-<img width="1919" height="1079" alt="Screenshot 2025-12-29 182926" src="https://github.com/user-attachments/assets/b730b672-2bcc-4ee0-bd38-7c48ca234658" />
-<img width="1919" height="1079" alt="Screenshot 2025-12-29 182819" src="https://github.com/user-attachments/assets/2e4f7939-66c5-4105-b80f-deb8e9b21d31" />
-<img width="1919" height="1079" alt="Screenshot 2025-12-29 182744" src="https://github.com/user-attachments/assets/4d1aa731-a8ce-454c-a07e-076bf037a972" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 182744" src="https://github.com/user-attachments/assets/bd73c92e-a589-4ddb-8f81-c282eaac9874" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 182819" src="https://github.com/user-attachments/assets/7510b20f-8c70-4344-9655-1c655b8d692c" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 182926" src="https://github.com/user-attachments/assets/33af6a7b-a337-457c-ac1b-bd6e60cfd098" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 183125" src="https://github.com/user-attachments/assets/6313afb3-ad6c-4d6b-8cc0-4f9c5bed7be2" />
+<img width="1919" height="1078" alt="Screenshot 2025-12-29 183153" src="https://github.com/user-attachments/assets/e26eba7f-27d7-48a5-bd80-bb0bcc9824df" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 183232" src="https://github.com/user-attachments/assets/a6ff1cb4-60df-4881-bf8d-6431d8b8380f" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 183244" src="https://github.com/user-attachments/assets/3d287740-360f-4177-8672-f7b576ce8749" />
 
 
 **Conclusion**
