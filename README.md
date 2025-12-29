@@ -74,6 +74,15 @@ Integration with wearable health devices
 
 https://github.com/user-attachments/assets/ae9f1f31-0eb2-4233-8601-a86da691f01b
 
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 183244" src="https://github.com/user-attachments/assets/cf7ca87c-0ab8-4006-bc23-09281a345a04" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 183232" src="https://github.com/user-attachments/assets/e2db06bd-10f0-4156-8e0e-8d4ff2c3783e" />
+<img width="1919" height="1078" alt="Screenshot 2025-12-29 183153" src="https://github.com/user-attachments/assets/d1169a81-8833-4d47-ae34-c4b087b17330" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 183125" src="https://github.com/user-attachments/assets/5a5a3a0c-e018-430c-a23e-99cfb575bfb9" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 182926" src="https://github.com/user-attachments/assets/014af494-e92a-41f0-a78e-6b5d09464620" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 182819" src="https://github.com/user-attachments/assets/61f1a0dc-425d-4591-b466-3a1db627d50f" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-29 182744" src="https://github.com/user-attachments/assets/6bf9b553-58e1-4a60-85fb-6e548b5593b5" />
+
+
 **Conclusion**
 
 HealthOvia aims to bridge the gap between patients and healthcare services by providing a reliable, easy-to-use digital platform. By combining healthcare services with wellness tools, HealthOvia promotes healthier lifestyles and improved patient experiences.
