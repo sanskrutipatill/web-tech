@@ -72,6 +72,7 @@ Integration with wearable health devices
 
 **Demo:**
 
+https://github.com/user-attachments/assets/ae9f1f31-0eb2-4233-8601-a86da691f01b
 
 **Conclusion**
 
